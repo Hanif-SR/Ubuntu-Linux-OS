@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Home — Node Nginx Demo</title>
+  <link rel="stylesheet" href="/css.css" />
+</head>
+<body>
+  <h1>Node + Nginx Demo</h1>
+  <p>A small demo app for security testing (lab use only).</p>
+  <% if (!user) { %>
+    <a href="/login">Login</a>
+  <% } else { %>
+    <a href="/dashboard">Dashboard</a>
+    <form action="/logout" method="post" style="display:inline"><button>Logout</button></form>
+  <% } %>
+  <hr>
+  <a href="/about">About</a>
+</body>
+</html>
